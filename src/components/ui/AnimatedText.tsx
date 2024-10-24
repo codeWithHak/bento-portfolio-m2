@@ -6,7 +6,7 @@ export default function AnimatedText() {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Trigger the animation when the component mounts
+    
     setAnimate(true);
   }, []);
 

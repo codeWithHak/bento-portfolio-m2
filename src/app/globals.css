@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+.vertical-text {
+  writing-mode: vertical-rl; /* Rotate the text vertically */
+  text-orientation: upright; /* Keep the characters upright */
+  transform: rotate(180deg); /* Optional: Adjust the rotation if needed */
+  display: inline-block;
+ /* Text color */
+}
+
 @font-face{
   font-family: "sundry";
   src: url('/public/fonts/SundryCondensed-Medium.otf');
