@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import AnimatedText  from "@/components/ui/AnimatedText";
+import Link from "next/link";
 
 export default function MainGrid() {
   return (
@@ -20,9 +21,11 @@ export default function MainGrid() {
         </div>
 
         <div className="inline-flex items-center justify-center bg-blue rounded-xl p-4 md:col-span-3 md:row-span-2 animate-from-bottom delay-200">
-          <Button className="text-darkBrown text-3xl md:text-xl lg:text-2xl xl:text-3xl font-sundry bg-cream rounded-full py-6 px-9 md:px-3 lg:px-7 xl:px-9 hover:text-cream hover:bg-darkBrown">
-            About Me <span className="animate-move-arrow">➔</span>
-          </Button>
+          <Link href='/about'>
+              <Button className="text-darkBrown text-3xl md:text-xl lg:text-2xl xl:text-3xl font-sundry bg-cream rounded-full py-6 px-9 md:px-3 lg:px-7 xl:px-9 hover:text-cream hover:bg-darkBrown">
+                About Me <span className="animate-move-arrow">➔</span>
+              </Button>
+          </Link>
         </div>
 
         <div className=" font-bold bg-darkBrown rounded-xl p-4 md:col-span-6 md:row-span-6 animate-from-left ">
@@ -95,9 +98,11 @@ export default function MainGrid() {
           ></Image>
         </div>
         <div className="flex justify-center items-center bg-pink rounded-xl p-4 md:col-span-3 md:row-span-2 animate-from-center delay-100">
-          <Button className="text-cream text-3xl md:text-lg lg:text-xl xl:text-3xl font-sundry bg-darkBrown rounded-full py-6 px-9 md:px-3 lg:px-7 xl:px-9 hover:text-darkBrown hover:bg-cream ">
-            Contact Me<span className="animate-move-arrow">➔</span>
-          </Button>
+          <Link href='/contact'>
+              <Button className="text-cream text-3xl md:text-lg lg:text-xl xl:text-3xl font-sundry bg-darkBrown rounded-full py-6 px-9 md:px-3 lg:px-7 xl:px-9 hover:text-darkBrown hover:bg-cream ">
+                Contact Me<span className="animate-move-arrow">➔</span>
+              </Button>
+          </Link>
         </div>
 
         <div className="flex justify-center items-center bg-darkBrown font-sundry font-bold text-4xl xl:text-[3.5rem] leading-tight uppercase text-cream rounded-xl p-4 md:col-span-3 md:row-span-6 animate-from-top ">
