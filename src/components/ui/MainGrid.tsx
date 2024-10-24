@@ -160,11 +160,3 @@ export default function MainGrid() {
   );
 }
 
-// 1 "(Waving hand emoji)"
-// 2 Hire Me
-// 3 Projects
-// 4 Content
-// 5 Content
-// 6 Resume
-// 7 What can i do
-// 8 I build websites for businesses
