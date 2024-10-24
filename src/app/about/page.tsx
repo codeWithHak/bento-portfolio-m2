@@ -27,7 +27,7 @@ function About() {
         <div className="flex flex-col gap-2 ">
             <h1 className="font-sundry text-8xl md:text-9xl fony-bold">About</h1>
           <h2 className=" text-5xl font-sundry ">
-            I &apos; m Huzair
+            I&apos;m Huzair
           </h2>
           <div className="flex items-center gap-2">
           <h2 className="text-3xl md:text-4xl  font-sundry ">
