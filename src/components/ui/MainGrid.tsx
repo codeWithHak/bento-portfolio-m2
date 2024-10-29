@@ -21,15 +21,15 @@ export default function MainGrid() {
         </div>
 
         <div className="inline-flex items-center justify-center bg-blue rounded-xl p-4 md:col-span-3 md:row-span-2 animate-from-bottom delay-200">
-          <Link href='/about'>
+          <Link href='/contact'>
               <Button className="text-darkBrown text-3xl md:text-xl lg:text-2xl xl:text-3xl font-sundry bg-cream rounded-full py-6 px-9 md:px-3 lg:px-7 xl:px-9 hover:text-cream hover:bg-darkBrown">
-                About Me <span className="animate-move-arrow">➔</span>
+                Contact Me <span className="animate-move-arrow">➔</span>
               </Button>
           </Link>
         </div>
 
         <div className=" font-bold bg-darkBrown rounded-xl p-4 md:col-span-6 md:row-span-6 animate-from-left ">
-          <h2 className="text-center text-5xl text-cream pb-5">PROJECTS</h2>
+          <Link href="/projects"><h2 className="text-center text-5xl text-cream pb-5">PROJECTS</h2></Link>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 items-center justify-center">
             <div className="flex flex-col bg-cream text-darkBrown items-center rounded-xl p-2 gap-2">
               <Image
@@ -45,7 +45,7 @@ export default function MainGrid() {
                 size={"sm"}
                 className="font-sundry text-center text-sm text-darkBrown bg-goldenYellow rounded-full animate-scale-bounce-slow delay-100"
               >
-                Visit Now
+               <Link href="https://shopco-nu.vercel.app/" target="_blank">Visit Now</Link>
               </Button>
             </div>
             <div className="hidden lg:flex flex-col bg-cream text-darkBrown  items-center rounded-xl p-2 gap-2">
@@ -62,7 +62,7 @@ export default function MainGrid() {
                 size={"sm"}
                 className="font-sundry text-center text-sm text-darkBrown bg-goldenYellow rounded-full animate-scale-bounce-slow delay-300"
               >
-                Visit Now
+               <Link href="https://resume-builder-ten-blond.vercel.app/" target="_blank"> Visit Now</Link>
               </Button>
             </div>
             <div className="hidden xl:flex flex-col bg-cream text-darkBrown items-center rounded-xl p-2 gap-2">
@@ -79,7 +79,7 @@ export default function MainGrid() {
                 size={"sm"}
                 className="font-sundry text-center text-sm text-darkBrown bg-goldenYellow rounded-full animate-scale-bounce-slow delay-800"
               >
-                Visit Now
+               <Link href="https://huzair.vercel.app/" target="_blank">Under Dev</Link>
               </Button>
             </div>
           </div>
@@ -98,9 +98,9 @@ export default function MainGrid() {
           ></Image>
         </div>
         <div className="flex justify-center items-center bg-pink rounded-xl p-4 md:col-span-3 md:row-span-2 animate-from-center delay-100">
-          <Link href='/contact'>
+          <Link href='/about'>
               <Button className="text-cream text-3xl md:text-lg lg:text-xl xl:text-3xl font-sundry bg-darkBrown rounded-full py-6 px-9 md:px-3 lg:px-7 xl:px-9 hover:text-darkBrown hover:bg-cream ">
-                Contact Me<span className="animate-move-arrow">➔</span>
+                About Me<span className="animate-move-arrow">➔</span>
               </Button>
           </Link>
         </div>
@@ -143,6 +143,7 @@ export default function MainGrid() {
         </div>
 
         <div className="flex flex-col uppercase justify-center items-center bg-blue text-cream text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold rounded-xl p-4 md:col-span-3 md:row-span-6 animate-from-right delay-200 ">
+        <a href="/images/HuzairCV.pdf" download >
           <div className="flex justify-center items-center">
             <h2>My</h2>
             <Image
@@ -154,6 +155,7 @@ export default function MainGrid() {
             ></Image>
           </div>
           <h2>Resume</h2>
+          </a>
         </div>
       </div>
     </div>

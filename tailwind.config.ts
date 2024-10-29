@@ -62,18 +62,30 @@ const config: Config = {
   			}
   		},
   		keyframes: {
-			jump: {
-				'0%, 100%': { transform: 'scale(1)' },  // At the start and end, the scale is 1
-				'50%': { transform: 'scale(1.2)' },  // At 50%, it scales up to 1.2
-			  },
-        'scale-bounce': {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.08)' },
-        },
-		'scale-bounce-slow': {
-			'0%, 100%': { transform: 'scale(1)' },
-			'50%': { transform: 'scale(1.06)' },
-		  },
+  			jump: {
+  				'0%, 100%': {
+  					transform: 'scale(1)'
+  				},
+  				'50%': {
+  					transform: 'scale(1.2)'
+  				}
+  			},
+  			'scale-bounce': {
+  				'0%, 100%': {
+  					transform: 'scale(1)'
+  				},
+  				'50%': {
+  					transform: 'scale(1.1)'
+  				}
+  			},
+  			'scale-bounce-slow': {
+  				'0%, 100%': {
+  					transform: 'scale(1)'
+  				},
+  				'50%': {
+  					transform: 'scale(1.07)'
+  				}
+  			},
   			wave: {
   				'0%': {
   					transform: 'rotate(0deg)'
@@ -100,45 +112,87 @@ const config: Config = {
   					transform: 'rotate(0deg)'
   				}
   			},
-        moveArrow: {
-          '0%, 100%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(10px)' },
-        },
-        fromTop: {
-          '0%': { transform: 'translateY(-500px) rotate(-20deg) scale(0.5)', opacity: '0' },
-          '100%': { transform: 'translateY(0) rotate(0deg) scale(1)', opacity: '1' },
-        },
-        fromBottom: {
-          '0%': { transform: 'translateY(500px) rotate(20deg) scale(0.5)', opacity: '0' },
-          '100%': { transform: 'translateY(0) rotate(0deg) scale(1)', opacity: '1' },
-        },
-        fromLeft: {
-          '0%': { transform: 'translateX(-500px) rotate(-30deg) scale(0.5)', opacity: '0' },
-          '100%': { transform: 'translateX(0) rotate(0deg) scale(1)', opacity: '1' },
-        },
-        fromRight: {
-          '0%': { transform: 'translateX(500px) rotate(30deg) scale(0.5)', opacity: '0' },
-          '100%': { transform: 'translateX(0) rotate(0deg) scale(1)', opacity: '1' },
-        },
-        fromCenter: {
-          '0%': { transform: 'scale(0) rotate(45deg)', opacity: '0' },
-          '100%': { transform: 'scale(1) rotate(0deg)', opacity: '1' },
-        },
-   
+  			moveArrow: {
+  				'0%, 100%': {
+  					transform: 'translateX(0)'
+  				},
+  				'50%': {
+  					transform: 'translateX(10px)'
+  				}
+  			},
+  			fromTop: {
+  				'0%': {
+  					transform: 'translateY(-500px) rotate(-20deg) scale(0.5)',
+  					opacity: '0'
+  				},
+  				'100%': {
+  					transform: 'translateY(0) rotate(0deg) scale(1)',
+  					opacity: '1'
+  				}
+  			},
+  			fromBottom: {
+  				'0%': {
+  					transform: 'translateY(500px) rotate(20deg) scale(0.5)',
+  					opacity: '0'
+  				},
+  				'100%': {
+  					transform: 'translateY(0) rotate(0deg) scale(1)',
+  					opacity: '1'
+  				}
+  			},
+  			fromLeft: {
+  				'0%': {
+  					transform: 'translateX(-500px) rotate(-30deg) scale(0.5)',
+  					opacity: '0'
+  				},
+  				'100%': {
+  					transform: 'translateX(0) rotate(0deg) scale(1)',
+  					opacity: '1'
+  				}
+  			},
+  			fromRight: {
+  				'0%': {
+  					transform: 'translateX(500px) rotate(30deg) scale(0.5)',
+  					opacity: '0'
+  				},
+  				'100%': {
+  					transform: 'translateX(0) rotate(0deg) scale(1)',
+  					opacity: '1'
+  				}
+  			},
+  			fromCenter: {
+  				'0%': {
+  					transform: 'scale(0) rotate(45deg)',
+  					opacity: '0'
+  				},
+  				'100%': {
+  					transform: 'scale(1) rotate(0deg)',
+  					opacity: '1'
+  				}
+  			},
+  			grid: {
+  				'0%': {
+  					transform: 'translateY(-50%)'
+  				},
+  				'100%': {
+  					transform: 'translateY(0)'
+  				}
+  			}
   		},
   		animation: {
-			jump: 'jump 0.5s ease-in-out',
-        'scale-bounce': 'scale-bounce 1.5s ease-in-out infinite',
-        'scale-bounce-slow': 'scale-bounce-slow 1.5s ease-in-out infinite',
-         'move-arrow': 'moveArrow 1s ease-in-out infinite',
-  			 'shatter-effect': 'shattered 1s ease-in-out forwards',
-         wave: 'wave 2s infinite',
-         'from-top': 'fromTop 1s ease-in-out forwards',
-        'from-bottom': 'fromBottom 1s ease-in-out forwards',
-        'from-left': 'fromLeft 1s ease-in-out forwards',
-        'from-right': 'fromRight 1s ease-in-out forwards',
-        'from-center': 'fromCenter 1s ease-in-out forwards',
-      },
+  			jump: 'jump 0.5s ease-in-out',
+  			'scale-bounce': 'scale-bounce 1.5s ease-in-out infinite',
+  			'scale-bounce-slow': 'scale-bounce-slow 1.5s ease-in-out infinite',
+  			'move-arrow': 'moveArrow 1s ease-in-out infinite',
+  			'shatter-effect': 'shattered 1s ease-in-out forwards',
+  			wave: 'wave 2s infinite',
+  			'from-top': 'fromTop 1s ease-in-out forwards',
+  			'from-bottom': 'fromBottom 1s ease-in-out forwards',
+  			'from-left': 'fromLeft 1s ease-in-out forwards',
+  			'from-right': 'fromRight 1s ease-in-out forwards',
+  			'from-center': 'fromCenter 1s ease-in-out forwards',
+  			grid: 'grid 15s linear infinite'
+  		},
   		fontFamily: {
   			sundry: ["sundry",'sans-serif'],
   			instrumentSans: ['instrument-sans',"sans serif"]

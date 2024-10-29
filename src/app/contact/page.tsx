@@ -1,3 +1,4 @@
+import WordRotate from "@/components/ui/word-rotate";
 import Link from "next/link";
 import React from "react";
 
@@ -20,8 +21,8 @@ function Contact() {
         </Link>
       </div>
       <div className="w-[70%] mx-auto flex items-center h-[50vh] md:h-[70vh]">
-        <div className="flex flex-col gap-6  max-w-[28rem]">
-          <h1 className="font-sundry text-8xl md:text-9xl">Hello .</h1>
+        <div className="flex flex-col gap-6  max-w-[74rem]">
+          <h1 className="font-sundry text-8xl md:text-9xl"><span>I Can<WordRotate  words={["Think", "Design", "Develop", "Deploy"]}/></span></h1>
           <p>
             Need a modern and professional website for your business which can
             boost your sales? Get in touch.

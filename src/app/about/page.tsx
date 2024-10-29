@@ -1,9 +1,12 @@
+import RetroGrid from "@/components/ui/retro-grid";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 function About() {
   return (
+    <>
+      
     <div>
         <div className="pt-8 pl-8">
         <Link
@@ -20,7 +23,7 @@ function About() {
           Home
         </Link>
       </div>
-    <div className="w-[80%] mx-auto p-4">
+    <div className="w-[80%] mx-auto pt-4 pl-4">
        
         
       <div className="flex flex-col md:flex-row gap-6 items-center justify-around pt-6 text-center md:text-start">
@@ -49,6 +52,7 @@ function About() {
       </div>
     </div>
     </div>
+    </>
   );
 }
 
