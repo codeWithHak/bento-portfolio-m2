@@ -25,7 +25,7 @@ export default function Projects() {
     {
       title: "Matt Farley Clone",
       description: "A Clone Of Matt Farley's Portfolio",
-      imageSrc: "/images/portfolio1-project.png",
+      imageSrc: "/images/hero-avatar.svg",
       tryLink: "https://mattfarley-clone.vercel.app"
     },
     {
