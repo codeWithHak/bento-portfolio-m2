@@ -45,8 +45,8 @@ function About() {
           </div>
           <p></p>
         </div>
-        <div className="">
-            <Image src="/images/me-round-border.png" alt="huzair" height={500} width={500}></Image>
+        <div className=" ">
+            <Image src="/images/me-round-border.png"  alt="huzair" height={500} width={500}></Image>
         </div>
       </div>
     </div>

@@ -67,19 +67,19 @@ export default function MainGrid() {
             </div>
             <div className="hidden xl:flex flex-col bg-cream text-darkBrown items-center rounded-xl p-2 gap-2">
               <Image
-                src="/images/blog-project.png"
+                src="/images/hero-avatar.svg"
                 alt="ecommerce"
                 height={120}
                 width={120}
-                className="md:w-[6rem]"
+                className="2xl:w-[7.7rem]"
               ></Image>
-              <h2 className="text-2xl font-sundry font-bold pt-1">BLOGO</h2>
+              <h2 className="text-2xl font-sundry font-bold pt-1">MATT</h2>
               <Button
                 variant={"link"}
                 size={"sm"}
                 className="font-sundry text-center text-sm text-darkBrown bg-goldenYellow rounded-full animate-scale-bounce-slow delay-800"
               >
-               <Link href="https://huzair.vercel.app/" target="_blank">Under Dev</Link>
+               <Link href="https://mattfarley-clone.vercel.app/" target="_blank">Visit Now</Link>
               </Button>
             </div>
           </div>
