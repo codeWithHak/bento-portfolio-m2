@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import AnimatedText  from "@/components/ui/AnimatedText";
 import Link from "next/link";
+import Resume from "@/app/resume/resume";
 
 export default function MainGrid() {
   return (
@@ -143,19 +144,7 @@ export default function MainGrid() {
         </div>
 
         <div className="flex flex-col uppercase justify-center items-center bg-blue text-cream text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold rounded-xl p-4 md:col-span-3 md:row-span-6 animate-from-right delay-200 ">
-        <a href="/images/HuzairCV.pdf" download className="hover:scale-105 transition">
-          <div className="flex justify-center items-center">
-            <h2 >My</h2>
-            <Image
-              src="/images/resume.gif"
-              alt="resume"
-              width={120}
-              height={120}
-              className="w-[5rem] lg:w-[7.5rem]"
-            ></Image>
-          </div>
-          <h2>Resume</h2>
-          </a>
+        <Resume />
         </div>
       </div>
     </div>
