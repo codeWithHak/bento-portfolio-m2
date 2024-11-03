@@ -1,3 +1,4 @@
+import WordRotate from "@/components/ui/word-rotate";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,7 +7,7 @@ function About() {
   return (
     <>
       
-    <div>
+    <div >
         <div className="pt-8 pl-8">
         <Link
           className=" hover:underline transition"
@@ -27,9 +28,17 @@ function About() {
         
       <div className="flex flex-col md:flex-row gap-6 items-center justify-around pt-6 text-center md:text-start">
         <div className="flex flex-col gap-2 ">
-            <h1 className="font-sundry text-8xl md:text-9xl fony-bold">About</h1>
+        <h1 className="font-sundry text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <span className="inline-flex items-center">
+          I Can{"  "}
+          <WordRotate
+            words={[" Think", " Design", " Develop", " Deploy"]}
+            className="ml-2"
+          />
+        </span>
+      </h1>
           <h2 className=" text-5xl font-sundry ">
-            I&apos;m Huzair
+            Hello, I&apos;m Huzair.
           </h2>
           <div className="flex items-center gap-2">
           <h2 className="text-3xl md:text-4xl  font-sundry ">

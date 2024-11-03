@@ -29,7 +29,7 @@ export default function MainGrid() {
         </div>
 
         <div className=" font-bold bg-darkBrown rounded-xl p-4 md:col-span-6 md:row-span-6 animate-from-left ">
-          <Link href="/projects"><h2 className="text-center text-5xl text-cream pb-5">PROJECTS</h2></Link>
+          <Link href="/projects"><h2 className="text-center text-5xl hover:scale-105 transition text-cream pb-5">PROJECTS <span className="animate-move-arrow inline-block">➔</span></h2></Link>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 items-center justify-center">
             <div className="flex flex-col bg-cream text-darkBrown items-center rounded-xl p-2 gap-2">
               <Image
@@ -56,7 +56,7 @@ export default function MainGrid() {
                 width={120}
                 className="md:w-[8.5rem]"
               ></Image>
-              <h2 className="text-2xl font-sundry font-bold pt-1">FIRST CV</h2>
+              <h2 className="text-2xl font-sundry font-bold pt-1">MAKE CV</h2>
               <Button
                 variant={"link"}
                 size={"sm"}
@@ -143,9 +143,9 @@ export default function MainGrid() {
         </div>
 
         <div className="flex flex-col uppercase justify-center items-center bg-blue text-cream text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold rounded-xl p-4 md:col-span-3 md:row-span-6 animate-from-right delay-200 ">
-        <a href="/images/HuzairCV.pdf" download >
+        <a href="/images/HuzairCV.pdf" download className="hover:scale-105 transition">
           <div className="flex justify-center items-center">
-            <h2>My</h2>
+            <h2 >My</h2>
             <Image
               src="/images/resume.gif"
               alt="resume"
