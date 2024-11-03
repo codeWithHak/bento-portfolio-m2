@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import WordRotate from "@/components/ui/word-rotate";
 import Image from "next/image";
@@ -89,7 +88,6 @@ function About() {
         </div>
         <h1 className="mt-16 mb-6 bg-gradient-to-br from-gray-600 to-gray-950 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
           TESTIMONIALS
-        
         </h1>
         <div className="mt-8 overflow-hidden">
           <InfiniteMovingCards className="mb-6" items={items} direction="right" speed="normal" pauseOnHover={true} />
