@@ -29,16 +29,16 @@ export default function MainGrid() {
           </Link>
         </div>
 
-        <div className=" font-bold bg-darkBrown rounded-xl p-4 md:col-span-6 md:row-span-6 animate-from-left ">
-          <Link href="/projects"><h2 className="text-center text-5xl hover:scale-105 transition text-cream pb-5">PROJECTS <span className="animate-move-arrow inline-block">➔</span></h2></Link>
+        <div className=" font-bold bg-darkBrown rounded-xl px-4 py-2 md:col-span-6 md:row-span-6 animate-from-left ">
+          <Link href="/projects"><h2 className="text-center text-5xl hover:scale-105 transition text-cream pb-3">PROJECTS <span className="animate-move-arrow inline-block">➔</span></h2></Link>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 items-center justify-center">
             <div className="flex flex-col bg-cream text-darkBrown items-center rounded-xl p-2 gap-2">
               <Image
                 src="/images/ecom-project.png"
                 alt="ecommerce"
-                height={120}
+                height={100}
                 width={120}
-                className="md:w-[8.5rem]"
+                className="md:w-[7rem]"
               ></Image>
               <h2 className="text-2xl font-sundry font-bold pt-1">SHOP.CO</h2>
               <Button
@@ -55,7 +55,8 @@ export default function MainGrid() {
                 alt="ecommerce"
                 height={120}
                 width={120}
-                className="md:w-[8.5rem]"
+                quality={100}
+                className="md:w-[7rem]"
               ></Image>
               <h2 className="text-2xl font-sundry font-bold pt-1">MAKE CV</h2>
               <Button
@@ -72,7 +73,8 @@ export default function MainGrid() {
                 alt="ecommerce"
                 height={120}
                 width={120}
-                className="2xl:w-[7.7rem]"
+                quality={100}
+                className="xl:w-[6.4rem]"
               ></Image>
               <h2 className="text-2xl font-sundry font-bold pt-1">MATT</h2>
               <Button

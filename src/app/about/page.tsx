@@ -57,7 +57,7 @@ function About() {
       <div className="w-[80%] mx-auto pt-4 pl-4">
         <div className="flex flex-col md:flex-row gap-6 items-center justify-around pt-6 text-center md:text-start">
           <div className="flex flex-col gap-2">
-            <h1 className="font-sundry text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            <h1 className="font-sundry text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
               <span className="inline-flex items-center">
                 I Can{"  "}
                 <WordRotate
